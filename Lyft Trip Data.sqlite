@@ -1,0 +1,41 @@
+-- inspect table
+-- SELECT * FROM trips;
+ 
+-- SELECT * FROM riders;
+ 
+-- SELECT * FROM cars;
+-- 2
+-- The primary key of trips is id.
+-- The primary key of riders is id.
+-- The primary key of cars is id.
+
+-- cross join riders and cars
+-- select * from riders cross join cars;
+
+-- create trip log
+-- SELECT *
+-- FROM trips
+-- LEFT JOIN riders 
+--   ON trips.rider_id = riders.id;
+-- link trips and cars
+
+-- select * from trips join cars on trips.car_id = cars.id;
+
+
+-- add new riders
+-- select *  from riders union select * from riders2; 
+
+-- average cost of a trip
+-- select avg(cost) from trips ;
+
+-- irregular users
+-- select id from riders where total_trips >500;
+
+
+-- number of active cars
+
+
+-- select count(*) from cars where status = "active"
+
+-- cars with highest trips completed
+select trips_completed, id  from cars order by 1 desc limit 2;   
